@@ -10,3 +10,20 @@ import { Recipe } from '../recipe.model';
 export class RecipeDetails {
   @Input() recipe: Recipe;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

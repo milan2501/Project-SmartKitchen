@@ -1,5 +1,6 @@
 import { NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { App } from './app';
 import { Header } from './header/header';
@@ -9,6 +10,7 @@ import { RecipeDetails } from './recipes/recipe-details/recipe-details';
 import { RecipeItem } from './recipes/recipes-list/recipe-item/recipe-item';
 import { ShoppingList } from './shopping-list/shopping-list';
 import { ShoppingEdit } from './shopping-list/shopping-edit/shopping-edit';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { ShoppingEdit } from './shopping-list/shopping-edit/shopping-edit';
     ShoppingEdit
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners()
